@@ -1,6 +1,6 @@
 
 
-@section('content')
+
 <section class="py-8">
     <div class="container px-4 mx-auto">
         <div class="py-4 bg-white rounded">
@@ -14,7 +14,6 @@
                 </div>
 
                 <div class="pt-4 px-6">
-                    <!-- ▼▼▼▼エラーメッセージ▼▼▼▼　-->
                     @if($errors->any())
                         <div class="mb-8 py-4 px-6 border border-red-300 bg-red-50 rounded">
                             <ul>
@@ -24,7 +23,6 @@
                             </ul>
                         </div>
                     @endif
-                    <!-- ▲▲▲▲エラーメッセージ▲▲▲▲　-->
 
                     <div class="mb-6">
                         <label class="block text-sm font-medium mb-2" for="name">名前</label>
@@ -51,4 +49,3 @@
     </div>
 </section>
 
-@endsection
