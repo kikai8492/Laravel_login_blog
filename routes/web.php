@@ -7,4 +7,5 @@ use Illuminate\Support\Facades\Route;
 Route::resource('/blogs', BlogsController::class);
 
 //ユーザー登録
-Route::get('/users/create', [UserController::class])
+Route::get('/users/create', [UserController::class, 'create']) -> name('users.create');
+Route::post('/users', [UserController::class, 'store'])->name('users.store');
